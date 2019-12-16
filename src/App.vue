@@ -3,23 +3,26 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
 <!--    在父组件中给子组件中传值-->
-    <HelloWorld msg="Welcome to Your Vue.js App" txt="11111"/>
-    <gretting></gretting>
+<!--    <HelloWorld msg="Welcome to Your Vue.js App" txt="11111"/>-->
+<!--    <gretting></gretting>-->
+    <ProjectList></ProjectList>
   </div>
 </template>
 <!--script js代码-->
 <script>
   //导入子组件
-import HelloWorld from './components/HelloWorld.vue'
-import gretting from "./components/gretting";
+// import HelloWorld from './components/HelloWorld.vue'
+// import gretting from "./components/gretting";
+import ProjectList from "./components/ProjectList";
 
 export default {
   //定义组件名称
   name: 'app',
   //声明子组件
   components: {
-    HelloWorld,
-    gretting
+    // HelloWorld,
+    // gretting,
+    ProjectList
   }
 }
 </script>
